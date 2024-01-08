@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<h1>Game of allgames registration</h1>
+<form>
+Введите  nickname<br>
+<input type="text" name="name" required="required"><br>
+Введите  email адрес<br>
+<input type="email" name="email" required="required"><br>
+Введите дату рождения<br>
+<input name="date" type="date"  required="required"><br>
+Ваш пол<br>
+<input id="radio1" name="radio" type="radio" required="required" >
+<label for="radio1">Мужской</label>
+<input id="radio2" name="radio" type="radio" >
+<label for="radio2">Женский</label><br>
+Ваша страна<br>
+<div class="auto">
+<input list="strani" id="myInput" required="required">
+<datalist id="strani">
+<option value="Украина">
+<option value="Франция">
+<option value="Латвия">
+<option value="Чехия">
+<option value="Греция">
+<option value="Австралия">
+<option value="Германия">
+<option value="Испания">
+<option value="Канада">
+<option value="США">
+    </datalist>
+  </div>
+  Тип героя<br>
+  <select name="vid"  required="required">
+  <option>Лучник</option>
+  <option>Маг</option>
+  <option>Копейщик</option>
+  <option>Мечник</option>
+  </select><br>
+Игровой опыт в годах<br>
+<input type="number" name="number"  min="1" max="60" required="required"><br>
+<input type="submit" name="submit_btn" value="Регистрация">
+</form>
+</body>
+</html>

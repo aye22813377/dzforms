@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<h1>SUSHI BAR "NE SLEZAI S TRONA"</h1>
+<form>
+Ваше имя<br>
+<input type="text" name="name" required="required"><br>
+Адрес доставки<br>
+<input type="text" name="adres" required="required"><br>
+Ваш номер телефона <br>
+<input name="tel" type="tel" pattern="\+[0-9]{12}" placeholder="+380000000000" required="required"><br>
+Ваш email адрес<br>
+<input type="email" name="email" required="required"><br>
+Количество палочек <br>
+<input type="number" name="number" min="1" max="100" required="required"><br>
+Вид палочек<br>
+<select name="vid"  required="required">
+<option>Обычные</option>
+<option>Учебные</option>
+</select><br>
+Меню <br>
+<select name="menu" multiple="multiple" size="10" required="required">
+    <option >Филадельфия класик</option>
+    <option >Филадельфия унаги</option>
+    <option >Филадельфия</option>
+    <option>Унаги маки</option>
+    <option >Эби темпура</option>
+    <option>Калифорния</option>
+    <option>Сяке маки</option>
+    <option>Эби маки </option>
+    <option>Сашими унаги</option>
+    <option>Сашими сяке</option>
+    <option>Салат Чука</option>
+ </select>
+ <br>
+Положить слафетки ? <br>
+<input id="radio1" name="radio" type="radio" required="required" >
+<label for="radio1">Да</label>
+<input id="radio2" name="radio" type="radio" >
+<label for="radio2">Нет</label><br>
+Коментарий к заказу<br>
+<textarea name="message"></textarea><br>
+<input type="submit" name="submit_btn" value="Отправить">
+</form>
+</body>
+</html>
